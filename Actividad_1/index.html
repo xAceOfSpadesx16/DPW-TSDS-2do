@@ -1,124 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
-    <!-- 
-    1- Crear un archivo llamado index.html que contenga la estructura mínima de un
-    documento HTML5.
-    2- Dentro del <body>, agregar:
-    - Un encabezado con el título de la página.
-    - Encabezados para subtítulos.
-    - Al menos dos párrafos de contenido ficticio.
-    - Elegir algunas palabras para:
-    * Enfatizar
-    - Dar importancia
-    - Resaltar/marcar
-    - Marcar irrelevancia
-    - Utilizar saltos de línea.
-    3- Agregar al mismo documento los tres tipos de hipervínculos vistos:
-    - Un enlace a otra página propia (que deberán crear).
-    - Un enlace externo a una web real.
-    - Un enlace interno.
-    4- En cada caso, y sin que se repitan, agregar uno de los atributos que puede tener un
-    hipervínculo.
-    5- Agregar al menos tres comentarios en el código explicando partes del mismo. 
-    -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Web - Fontana Andrés</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <meta name="description" content="Portfolio web con actividades de Diseño de Páginas Web">
+    <meta name="author" content="Fontana Andrés">
+</head>
+<body>
+    <!-- Header: Encabezado general del sitio -->
+    <header>
+        <h1>Portfolio Web - Diseño de Páginas Web</h1>
+        <p>Desarrollado por: Fontana Andrés</p>
+        <p>Primer Cuatrimestre - TP4</p>
+    </header>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Actividad 1 - Enlaces y Formato</title>
-        <link rel="icon" type="image/x-icon" href="/Actividad_1/assets/favicon.ico">
-    </head>
-    <body>
-
-        <h1>Bienvenido a la Actividad N° 1</h1>
-
-        <h2>Acerca de Mi</h2>
-
-        <p>
-            <!-- El atributo em define un texto en cursiva -->
-            <em>Lorem ipsum dolor sit amet,</em>
-            <br>
-            <!-- El atributo strong define un texto en negrita -->
-            <strong>adipisicing elit. Voluptatum, eveniet veritatis. </strong>
-            <br>
-            <!-- El atributo mark define un texto marcado -->
-            <mark> quasi non expedita, ipsum fugit earum velit! Velit labore</mark>
-            <br>
-            incidunt harum dicta aut nemo illum laborum commodi cupiditate?
-        </p>
-
-        <h2>Mas Contenido</h2>
-
-        <p>
-            <!-- El atributo del atributo u define un texto subrayado -->
-            <u>Incididunt pug aesthetic cillum yuccie, sus sint yes plz authentic semiotics. </u>
-            Proident tattooed coloring book, cred poke 3 wolf moon mollit VHS.
-            <br>
-            <!-- El atributo del atributo s define un texto tachado -->
-            <s>Photo booth squid helvetica gochujang. </s>
-            <br>
-            Yes plz poutine kombucha taiyaki taxidermy.
-        </p>
-
-
-        <h2>Enlaces de Interés</h2>
-
-        <p>
-            A continuación, encontrarás enlaces que pueden interesarte:
-        </p>
-
+    <!-- Nav: Menú de navegación -->
+    <nav>
         <ul>
-            <li>
-                <!-- El atributo title define un texto alternativo para el hipervínculo -->
-                Para ir a la página de detalles <a href="detalles.html" title="Haz clic para ir a la página de detalles">Haz clic aqui</a>.
-            </li>
-            <li>
-                <!-- El atributo target="_blank" abre el hipervínculo en una nueva ventana -->
-                Consulta más información en <a href="https://www.google.com" target="_blank">Google</a> 
-            </li>
-            <li>
-                <!-- El atributo accesskey define una tecla de acceso directo para el hipervínculo -->
-                Ir directamente a la <a href="#seccion-importante" accesskey="s">Sección Importante</a> o presiona "alt+s".
-            </li>
+            <li><a href="index.html" aria-current="page">Inicio</a></li>
+            <li><a href="actividad1.html">Actividad 1 - Enlaces y Formato</a></li>
+            <li><a href="actividad2.html">Actividad 2 - Multimedia</a></li>
+            <li><a href="actividad3.html">Actividad 3 - Tablas y Formularios</a></li>
+            <li><a href="detalles.html">Página de Detalles</a></li>
         </ul>
+    </nav>
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+    <!-- Main: Contenido principal -->
+    <main>
+        <section>
+            <h2>Bienvenido a mi Portfolio Web</h2>
+            <article>
+                <h3>Acerca de este sitio</h3>
+                <p>Este sitio web contiene todas las actividades realizadas durante el primer cuatrimestre de la materia "Diseño de Páginas Web". Cada página representa una actividad específica con diferentes elementos HTML5.</p>
+            </article>
+        </section>
 
-        <h3 id="seccion-importante">Esta es la Sección Importante</h3>
-        <p>
-            Busey ipsum dolor sit amet. 
-            The best way to communicate is compatible. 
-            Compatible communication is listening with open ears and an open mind, and not being fearful or judgemental about what you're hearing.
-            The magic Indian is a mysterious spiritual force, and we're going to Cathedral Rock, and that's the vortex of the heart.
-        </p>
+        <section>
+            <h2>Contenido del Portfolio</h2>
+            <article>
+                <h3>Actividad 1 - Enlaces y Formato</h3>
+                <p>En esta actividad se trabajó con:</p>
+                <ul>
+                    <li>Estructura básica de HTML5</li>
+                    <li>Etiquetas de formato de texto</li>
+                    <li>Hipervínculos internos, externos y a otras páginas</li>
+                    <li>Atributos de enlaces</li>
+                </ul>
+                <a href="actividad1.html">Ver Actividad 1</a>
+            </article>
 
-        <br>
-        <a href="#">Volver a arriba</a>
+            <article>
+                <h3>Actividad 2 - Multimedia</h3>
+                <p>En esta actividad se implementó:</p>
+                <ul>
+                    <li>Listas ordenadas, desordenadas y de definición</li>
+                    <li>Imágenes con diferentes formatos</li>
+                    <li>Elementos de audio y video</li>
+                    <li>Contenido embebido con iframe</li>
+                </ul>
+                <a href="actividad2.html">Ver Actividad 2</a>
+            </article>
 
-    </body>
-</html>
+            <article>
+                <h3>Actividad 3 - Tablas y Formularios</h3>
+                <p>En esta actividad se desarrolló:</p>
+                <ul>
+                    <li>Tablas con estructura semántica</li>
+                    <li>Formularios con diferentes tipos de inputs</li>
+                    <li>Elementos de formulario avanzados</li>
+                    <li>Validación y accesibilidad</li>
+                </ul>
+                <a href="actividad3.html">Ver Actividad 3</a>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Información Adicional</h3>
+            <p>Este portfolio demuestra el dominio de las tecnologías web fundamentales y las mejores prácticas de desarrollo web semántico.</p>
+            <p>Fecha de presentación: 4 de Julio, 2024</p>
+        </aside>
+    </main>
+
+    <!-- Footer: Pie de página -->
+    <footer>
+        <p>&copy; 2024 Fontana Andrés - Diseño de Páginas Web</p>
+        <p>Instituto de Educación Superior</p>
+        <p>Primer Cuatrimestre - TP4</p>
+    </footer>
+</body>
+</html> 

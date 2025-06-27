@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2 - Multimedia | Fontana Andrés</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <meta name="description" content="Actividad 2: Listas, imágenes y contenido multimedia en HTML5">
+</head>
+<body>
+    <!-- Header: Encabezado general del sitio -->
+    <header>
+        <h1>Portfolio Web - Diseño de Páginas Web</h1>
+        <p>Desarrollado por: Fontana Andrés</p>
+        <p>Primer Cuatrimestre - TP4</p>
+    </header>
+
+    <!-- Nav: Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="actividad1.html">Actividad 1 - Enlaces y Formato</a></li>
+            <li><a href="actividad2.html" aria-current="page">Actividad 2 - Multimedia</a></li>
+            <li><a href="actividad3.html">Actividad 3 - Tablas y Formularios</a></li>
+            <li><a href="detalles.html">Página de Detalles</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main: Contenido principal -->
+    <main>
+        <section>
+            <h1 id="actividad2">Actividad N° 2 - Listas, Imágenes y Contenido Multimedia</h1>
+
+            <article>
+                <h2>Listas</h2>
+                <h3>Lista Ordenada</h3>
+                <ol>
+                    <li>Primer paso</li>
+                    <li>Segundo paso</li>
+                    <li>Tercer paso</li>
+                </ol>
+                <h3>Lista Desordenada</h3>
+                <ul>
+                    <li>Elemento A</li>
+                    <li>Elemento B</li>
+                    <li>Elemento C</li>
+                </ul>
+            </article>
+
+            <article>
+                <h2>Lista de Términos con Imágenes</h2>
+                <dl>
+                    <dt><img src="assets/html5-logo.png" alt="HTML" height="40"> HTML</dt>
+                    <dd>Lenguaje de marcado para la creación de páginas web.</dd>
+                    <dt><img src="assets/logo-css.png" alt="CSS" height="40"> CSS</dt>
+                    <dd>Lenguaje de estilos para diseñar páginas web.</dd>
+                    <dt><img src="assets/js-logo.png" alt="JavaScript" height="40"> JavaScript</dt>
+                    <dd>Lenguaje de programación para la web.</dd>
+                </dl>
+            </article>
+
+            <article>
+                <h2>Audios</h2>
+                <section>
+                    <h3>Nombre del tema: Banana</h3>
+                    <audio controls preload="auto">
+                        <source src="assets/audios/banana.mp3" type="audio/mpeg">
+                        <source src="assets/audios/banana.ogg" type="audio/ogg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </section>
+                
+                <section>
+                    <h3>Nombre del tema: Papaya</h3>
+                    <audio controls preload="metadata" autoplay loop muted>
+                        <source src="assets/audios/papaya.mp3" type="audio/mpeg">
+                        <source src="assets/audios/papaya.ogg" type="audio/ogg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </section>
+            </article>
+
+            <article>
+                <h2>Videos</h2>
+                <section>
+                    <h3>Video de ejemplo 1</h3>
+                    <figure>
+                        <video controls width="320" poster="assets/mi-familia.webp" preload="auto" loop>
+                            <source src="assets/videos/jurio.mp4" type="video/mp4">
+                            <source src="assets/videos/jurio.webm" type="video/webm">
+                            <track src="assets/subtitulos/jurio.vtt" kind="subtitles" srclang="es" label="Español">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                        <figcaption>Video con subtítulos en español</figcaption>
+                    </figure>
+                </section>
+            </article>
+
+            <article>
+                <h2>Imagen adaptable</h2>
+                <figure>
+                    <picture>
+                        <source srcset="https://cataas.com/cat/orange,cute" media="(min-width: 900px)">
+                        <source srcset="https://cataas.com/cat/black" media="(min-width: 600px)">
+                        <img src="assets/gato.jpeg" alt="Galería 1" width="250">
+                    </picture>
+                    <figcaption>Imagen adaptable según el tamaño de pantalla</figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <h2>Contenido Embebido con iframe</h2>
+                <section>
+                    <h3>Video de YouTube</h3>
+                    <figure>
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/K4DyBUG242c?si=O0k9c9Xn2Y9yPhVz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <figcaption>Video embebido de YouTube</figcaption>
+                    </figure>
+                </section>
+                
+                <section>
+                    <h3>Mapa de Google Maps</h3>
+                    <figure>
+                        <iframe src="https://www.google.com/maps/embed?pb=!4v1751055316972!6m8!1m7!1ssSaOQdhbTgWbQWeQ5Nfd2Q!2m2!1d-35.43055157367633!2d-60.1748679621957!3f12.069274121085652!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <figcaption>Mapa embebido de Google Maps</figcaption>
+                    </figure>
+                </section>
+                
+                <section>
+                    <h3>Presentación PDF embebida</h3>
+                    <figure>
+                        <embed src="assets/Actividad_3.pdf" width="800" height="500">
+                        <figcaption>Documento PDF embebido</figcaption>
+                    </figure>
+                </section>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer: Pie de página -->
+    <footer>
+        <p>&copy; 2024 Fontana Andrés - Diseño de Páginas Web</p>
+        <p>Instituto de Educación Superior</p>
+        <p>Primer Cuatrimestre - TP4</p>
+        <a href="index.html">Volver al Inicio</a>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 3 - Tablas y Formularios | Fontana Andrés</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <meta name="description" content="Actividad 3: Tablas y formularios en HTML5">
+</head>
+<body>
+    <!-- Header: Encabezado general del sitio -->
+    <header>
+        <h1>Portfolio Web - Diseño de Páginas Web</h1>
+        <p>Desarrollado por: Fontana Andrés</p>
+        <p>Primer Cuatrimestre - TP4</p>
+    </header>
+
+    <!-- Nav: Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="actividad1.html">Actividad 1 - Enlaces y Formato</a></li>
+            <li><a href="actividad2.html">Actividad 2 - Multimedia</a></li>
+            <li><a href="actividad3.html" aria-current="page">Actividad 3 - Tablas y Formularios</a></li>
+            <li><a href="detalles.html">Página de Detalles</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main: Contenido principal -->
+    <main>
+        <section>
+            <h1 id="actividad3">Actividad N° 3 - Tablas y Formularios</h1>
+
+            <article>
+                <h2>Tablas</h2>
+                
+                <!-- Primera tabla: Horario de clases -->
+                <section>
+                    <h3>Horario de Clases</h3>
+                    <table border="1" style="width: 100%; margin-bottom: 30px;">
+                        <caption>Horario de Clases - Semana 1</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Hora</th>
+                                <th scope="col">Lunes</th>
+                                <th scope="col">Martes</th>
+                                <th scope="col">Miércoles</th>
+                                <th scope="col">Jueves</th>
+                                <th scope="col">Viernes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">08:00 - 09:00</th>
+                                <td>Matemáticas</td>
+                                <td>Historia</td>
+                                <td>Lenguaje</td>
+                                <td>Ciencias</td>
+                                <td>Arte</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">09:00 - 10:00</th>
+                                <td>Física</td>
+                                <td>Matemáticas</td>
+                                <td>Inglés</td>
+                                <td>Educación Física</td>
+                                <td>Matemáticas</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">10:00 - 11:00</th>
+                                <td colspan="2">Receso</td>
+                                <td>Química</td>
+                                <td>Historia</td>
+                                <td>Lenguaje</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">11:00 - 12:00</th>
+                                <td>Biología</td>
+                                <td>Lenguaje</td>
+                                <td>Matemáticas</td>
+                                <td>Inglés</td>
+                                <td>Ciencias</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="6">Total de horas semanales: 20 horas</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+
+                <!-- Segunda tabla: Inventario de productos -->
+                <section>
+                    <h3>Inventario de Productos</h3>
+                    <table border="1" style="width: 100%; margin-bottom: 30px;">
+                        <caption>Inventario de Productos - Tienda Online</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Código</th>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Categoría</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Stock</th>
+                                <th scope="col">Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>001</td>
+                                <td>Laptop HP Pavilion</td>
+                                <td rowspan="2">Electrónicos</td>
+                                <td>$899.99</td>
+                                <td>15</td>
+                                <td>Disponible</td>
+                            </tr>
+                            <tr>
+                                <td>002</td>
+                                <td>Mouse Inalámbrico</td>
+                                <td>$29.99</td>
+                                <td>50</td>
+                                <td>Disponible</td>
+                            </tr>
+                            <tr>
+                                <td>003</td>
+                                <td>Libro de Programación</td>
+                                <td>Libros</td>
+                                <td>$45.00</td>
+                                <td>8</td>
+                                <td>Disponible</td>
+                            </tr>
+                            <tr>
+                                <td>004</td>
+                                <td>Mesa de Escritorio</td>
+                                <td>Muebles</td>
+                                <td>$199.99</td>
+                                <td>0</td>
+                                <td>Agotado</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Total de productos</td>
+                                <td>$1,174.97</td>
+                                <td>73</td>
+                                <td>4 productos</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+            </article>
+
+            <article>
+                <h2>Formulario de Registro</h2>
+                
+                <form action="#" method="post" style="max-width: 600px;">
+                    <fieldset>
+                        <legend>Información Personal</legend>
+                        
+                        <!-- Campo de texto normal -->
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre completo" maxlength="50">
+                        <br><br>
+                        
+                        <!-- Campo de email -->
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+                        <br><br>
+                        
+                        <!-- Campo de teléfono -->
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+1 234 567 8900" pattern="[0-9+\-\s()]+">
+                        <br><br>
+                        
+                        <!-- Campo de fecha -->
+                        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                        <br><br>
+                        
+                        <!-- Radio buttons -->
+                        <p>Género:</p>
+                        <input type="radio" id="masculino" name="genero" value="masculino">
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" id="femenino" name="genero" value="femenino">
+                        <label for="femenino">Femenino</label>
+                        <input type="radio" id="otro" name="genero" value="otro">
+                        <label for="otro">Otro</label>
+                        <br><br>
+                        
+                        <!-- Checkbox -->
+                        <input type="checkbox" id="newsletter" name="newsletter" value="si">
+                        <label for="newsletter">Suscribirse al boletín de noticias</label>
+                        <br><br>
+                        
+                        <!-- Lista desplegable -->
+                        <label for="pais">País de residencia:</label>
+                        <select id="pais" name="pais" required>
+                            <option value="">Selecciona un país</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="chile">Chile</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="mexico">México</option>
+                            <option value="peru">Perú</option>
+                            <option value="españa">España</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                        <br><br>
+                        
+                        <!-- Lista abierta -->
+                        <label for="intereses">Intereses (selecciona múltiples opciones):</label>
+                        <select id="intereses" name="intereses" multiple size="4">
+                            <option value="tecnologia">Tecnología</option>
+                            <option value="deportes">Deportes</option>
+                            <option value="musica">Música</option>
+                            <option value="arte">Arte</option>
+                            <option value="cocina">Cocina</option>
+                            <option value="viajes">Viajes</option>
+                            <option value="lectura">Lectura</option>
+                            <option value="videojuegos">Videojuegos</option>
+                        </select>
+                        <br><br>
+                        
+                        <!-- Campo de texto amplio -->
+                        <label for="comentarios">Comentarios adicionales:</label>
+                        <textarea id="comentarios" name="comentarios" rows="5" cols="50" placeholder="Escribe aquí tus comentarios, sugerencias o preguntas..."></textarea>
+                        <br><br>
+                        
+                        <!-- Botón de enviar -->
+                        <input type="submit" value="Enviar Registro">
+                        <input type="reset" value="Limpiar Formulario">
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer: Pie de página -->
+    <footer>
+        <p>&copy; 2024 Fontana Andrés - Diseño de Páginas Web</p>
+        <p>Instituto de Educación Superior</p>
+        <p>Primer Cuatrimestre - TP4</p>
+        <a href="index.html">Volver al Inicio</a>
+    </footer>
+</body>
+</html> 
