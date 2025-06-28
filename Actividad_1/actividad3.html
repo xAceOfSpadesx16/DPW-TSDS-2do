@@ -37,8 +37,11 @@
                 <!-- Primera tabla: Horario de clases -->
                 <section>
                     <h3>Horario de Clases</h3>
+                    <!-- Tabla con estructura semántica usando thead, tbody, tfoot y caption -->
                     <table border="1" style="width: 100%; margin-bottom: 30px;">
+                        <!-- Etiqueta caption para dar contexto a la tabla -->
                         <caption>Horario de Clases - Semana 1</caption>
+                        <!-- Encabezado de la tabla con celdas th y atributo scope -->
                         <thead>
                             <tr>
                                 <th scope="col">Hora</th>
@@ -49,6 +52,7 @@
                                 <th scope="col">Viernes</th>
                             </tr>
                         </thead>
+                        <!-- Cuerpo de la tabla con datos -->
                         <tbody>
                             <tr>
                                 <th scope="row">08:00 - 09:00</th>
@@ -68,6 +72,7 @@
                             </tr>
                             <tr>
                                 <th scope="row">10:00 - 11:00</th>
+                                <!-- Uso de colspan para combinar celdas horizontalmente -->
                                 <td colspan="2">Receso</td>
                                 <td>Química</td>
                                 <td>Historia</td>
@@ -82,6 +87,7 @@
                                 <td>Ciencias</td>
                             </tr>
                         </tbody>
+                        <!-- Pie de tabla con resumen -->
                         <tfoot>
                             <tr>
                                 <td colspan="6">Total de horas semanales: 20 horas</td>
@@ -93,8 +99,11 @@
                 <!-- Segunda tabla: Inventario de productos -->
                 <section>
                     <h3>Inventario de Productos</h3>
+                    <!-- Tabla con estructura semántica usando thead, tbody, tfoot y caption -->
                     <table border="1" style="width: 100%; margin-bottom: 30px;">
+                        <!-- Etiqueta caption para dar contexto a la tabla -->
                         <caption>Inventario de Productos - Tienda Online</caption>
+                        <!-- Encabezado de la tabla con celdas th y atributo scope -->
                         <thead>
                             <tr>
                                 <th scope="col">Código</th>
@@ -105,10 +114,12 @@
                                 <th scope="col">Estado</th>
                             </tr>
                         </thead>
+                        <!-- Cuerpo de la tabla con datos -->
                         <tbody>
                             <tr>
                                 <td>001</td>
                                 <td>Laptop HP Pavilion</td>
+                                <!-- Uso de rowspan para combinar celdas verticalmente -->
                                 <td rowspan="2">Electrónicos</td>
                                 <td>$899.99</td>
                                 <td>15</td>
@@ -138,6 +149,7 @@
                                 <td>Agotado</td>
                             </tr>
                         </tbody>
+                        <!-- Pie de tabla con resumen -->
                         <tfoot>
                             <tr>
                                 <td colspan="3">Total de productos</td>
@@ -153,31 +165,33 @@
             <article>
                 <h2>Formulario de Registro</h2>
                 
+                <!-- Formulario con fieldset para agrupar campos relacionados -->
                 <form action="#" method="post" style="max-width: 600px;">
                     <fieldset>
+                        <!-- Legend para describir el grupo de campos -->
                         <legend>Información Personal</legend>
                         
-                        <!-- Campo de texto normal -->
+                        <!-- Campo de texto con atributos required, placeholder y maxlength -->
                         <label for="nombre">Nombre completo:</label>
                         <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre completo" maxlength="50">
                         <br><br>
                         
-                        <!-- Campo de email -->
+                        <!-- Campo de email con validación automática -->
                         <label for="email">Correo electrónico:</label>
                         <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
                         <br><br>
                         
-                        <!-- Campo de teléfono -->
+                        <!-- Campo de teléfono con patrón de validación -->
                         <label for="telefono">Teléfono:</label>
-                        <input type="tel" id="telefono" name="telefono" placeholder="+1 234 567 8900" pattern="[0-9+\-\s()]+">
+                        <input type="tel" id="telefono" name="telefono" placeholder="1234567890" pattern="[0-9]{10}">
                         <br><br>
                         
-                        <!-- Campo de fecha -->
+                        <!-- Campo de fecha con selector nativo -->
                         <label for="fecha_nacimiento">Fecha de nacimiento:</label>
                         <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
                         <br><br>
                         
-                        <!-- Radio buttons -->
+                        <!-- Radio buttons para selección única -->
                         <p>Género:</p>
                         <input type="radio" id="masculino" name="genero" value="masculino">
                         <label for="masculino">Masculino</label>
@@ -187,12 +201,12 @@
                         <label for="otro">Otro</label>
                         <br><br>
                         
-                        <!-- Checkbox -->
+                        <!-- Checkbox para suscribirse al boletín de noticias -->
                         <input type="checkbox" id="newsletter" name="newsletter" value="si">
                         <label for="newsletter">Suscribirse al boletín de noticias</label>
                         <br><br>
                         
-                        <!-- Lista desplegable -->
+                        <!-- Lista desplegable con opciones -->
                         <label for="pais">País de residencia:</label>
                         <select id="pais" name="pais" required>
                             <option value="">Selecciona un país</option>
@@ -206,7 +220,7 @@
                         </select>
                         <br><br>
                         
-                        <!-- Lista abierta -->
+                        <!-- Lista abierta con selección múltiple -->
                         <label for="intereses">Intereses (selecciona múltiples opciones):</label>
                         <select id="intereses" name="intereses" multiple size="4">
                             <option value="tecnologia">Tecnología</option>
@@ -220,12 +234,12 @@
                         </select>
                         <br><br>
                         
-                        <!-- Campo de texto amplio -->
+                        <!-- Campo de texto amplio con textarea -->
                         <label for="comentarios">Comentarios adicionales:</label>
                         <textarea id="comentarios" name="comentarios" rows="5" cols="50" placeholder="Escribe aquí tus comentarios, sugerencias o preguntas..."></textarea>
                         <br><br>
                         
-                        <!-- Botón de enviar -->
+                        <!-- Botones de envío y reset del formulario -->
                         <input type="submit" value="Enviar Registro">
                         <input type="reset" value="Limpiar Formulario">
                     </fieldset>
@@ -237,7 +251,7 @@
     <!-- Footer: Pie de página -->
     <footer>
         <p>&copy; 2024 Fontana Andrés - Diseño de Páginas Web</p>
-        <p>Instituto de Educación Superior</p>
+        <p>Instituto Superior de Formacion Docente y Tecnica N°28</p>
         <p>Primer Cuatrimestre - TP4</p>
         <a href="index.html">Volver al Inicio</a>
     </footer>

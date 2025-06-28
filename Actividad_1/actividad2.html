@@ -50,11 +50,11 @@
             <article>
                 <h2>Lista de Términos con Imágenes</h2>
                 <dl>
-                    <dt><img src="assets/html5-logo.png" alt="HTML" height="40"> HTML</dt>
+                    <dt><img src="assets/imagenes/html5-logo.png" alt="HTML" height="40"> HTML</dt>
                     <dd>Lenguaje de marcado para la creación de páginas web.</dd>
-                    <dt><img src="assets/logo-css.png" alt="CSS" height="40"> CSS</dt>
+                    <dt><img src="assets/imagenes/logo-css.png" alt="CSS" height="40"> CSS</dt>
                     <dd>Lenguaje de estilos para diseñar páginas web.</dd>
-                    <dt><img src="assets/js-logo.png" alt="JavaScript" height="40"> JavaScript</dt>
+                    <dt><img src="assets/imagenes/js-logo.png" alt="JavaScript" height="40"> JavaScript</dt>
                     <dd>Lenguaje de programación para la web.</dd>
                 </dl>
             </article>
@@ -63,7 +63,9 @@
                 <h2>Audios</h2>
                 <section>
                     <h3>Nombre del tema: Banana</h3>
+                    <!-- El elemento audio con atributos controls y preload="auto" -->
                     <audio controls preload="auto">
+                        <!-- Múltiples fuentes de audio para mayor compatibilidad -->
                         <source src="assets/audios/banana.mp3" type="audio/mpeg">
                         <source src="assets/audios/banana.ogg" type="audio/ogg">
                         Tu navegador no soporta el elemento de audio.
@@ -72,7 +74,9 @@
                 
                 <section>
                     <h3>Nombre del tema: Papaya</h3>
+                    <!-- El elemento audio con atributos autoplay, loop, muted y preload="metadata" -->
                     <audio controls preload="metadata" autoplay loop muted>
+                        <!-- Múltiples fuentes de audio para mayor compatibilidad -->
                         <source src="assets/audios/papaya.mp3" type="audio/mpeg">
                         <source src="assets/audios/papaya.ogg" type="audio/ogg">
                         Tu navegador no soporta el elemento de audio.
@@ -85,9 +89,12 @@
                 <section>
                     <h3>Video de ejemplo 1</h3>
                     <figure>
-                        <video controls width="320" poster="assets/mi-familia.webp" preload="auto" loop>
+                        <!-- El elemento video con atributos controls, width, poster, preload y loop -->
+                        <video controls width="320" poster="assets/imagenes/mi-familia.webp" preload="auto" loop>
+                            <!-- Múltiples fuentes de video para mayor compatibilidad -->
                             <source src="assets/videos/jurio.mp4" type="video/mp4">
                             <source src="assets/videos/jurio.webm" type="video/webm">
+                            <!-- Elemento track para subtítulos en formato .vtt -->
                             <track src="assets/subtitulos/jurio.vtt" kind="subtitles" srclang="es" label="Español">
                             Tu navegador no soporta el elemento de video.
                         </video>
@@ -97,14 +104,45 @@
             </article>
 
             <article>
-                <h2>Imagen adaptable</h2>
+                <h2>Galería de Imágenes Adaptable</h2>
+                <h4>según el tamaño de pantalla</h4>
                 <figure>
+                    <!-- Elemento picture para imágenes adaptables según el ancho del dispositivo -->
                     <picture>
-                        <source srcset="https://cataas.com/cat/orange,cute" media="(min-width: 900px)">
-                        <source srcset="https://cataas.com/cat/black" media="(min-width: 600px)">
-                        <img src="assets/gato.jpeg" alt="Galería 1" width="250">
+                        <!-- Imagen para pantallas grandes (min-width: 900px) -->
+                        <source srcset="assets/imagenes/gato_negro1.webp" media="(min-width: 900px)">
+                        <!-- Imagen para pantallas medianas (min-width: 600px) -->
+                        <source srcset="assets/imagenes/gato_negro2.webp" media="(min-width: 600px)">
+                        <!-- Imagen por defecto para pantallas pequeñas -->
+                        <img src="assets/imagenes/gato_negro.jpg" alt="Galería 1" width="250">
                     </picture>
-                    <figcaption>Imagen adaptable según el tamaño de pantalla</figcaption>
+                    <figcaption>Primera imagen de la galería</figcaption>
+                </figure>
+                
+                <figure>
+                    <!-- Elemento picture para imágenes adaptables según el ancho del dispositivo -->
+                    <picture>
+                        <!-- Imagen para pantallas grandes (min-width: 900px) -->
+                        <source srcset="assets/imagenes/gato_blanco1.webp" media="(min-width: 900px)">
+                        <!-- Imagen para pantallas medianas (min-width: 600px) -->
+                        <source srcset="assets/imagenes/gato_blanco2.avif" media="(min-width: 600px)">
+                        <!-- Imagen por defecto para pantallas pequeñas -->
+                        <img src="assets/imagenes/gato_blanco.jpg" alt="Galería 2" width="250">
+                    </picture>
+                    <figcaption>Segunda imagen de la galería</figcaption>
+                </figure>
+                
+                <figure>
+                    <!-- Elemento picture para imágenes adaptables según el ancho del dispositivo -->
+                    <picture>
+                        <!-- Imagen para pantallas grandes (min-width: 900px) -->
+                        <source srcset="assets/imagenes/gato_pardo1.webp" media="(min-width: 900px)">
+                        <!-- Imagen para pantallas medianas (min-width: 600px) -->
+                        <source srcset="assets/imagenes/gato_pardo2.avif" media="(min-width: 600px)">
+                        <!-- Imagen por defecto para pantallas pequeñas -->
+                        <img src="assets/imagenes/gato_pardo.jpg" alt="Galería 3" width="250">
+                    </picture>
+                    <figcaption>Tercera imagen de la galería</figcaption>
                 </figure>
             </article>
 
@@ -113,7 +151,8 @@
                 <section>
                     <h3>Video de YouTube</h3>
                     <figure>
-                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/K4DyBUG242c?si=O0k9c9Xn2Y9yPhVz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <!-- Elemento iframe para embeber video de YouTube proporcionado por youtube -->
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/K4DyBUG242c?si=O0k9c9Xn2Y9yPhVz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
                         <figcaption>Video embebido de YouTube</figcaption>
                     </figure>
                 </section>
@@ -121,7 +160,8 @@
                 <section>
                     <h3>Mapa de Google Maps</h3>
                     <figure>
-                        <iframe src="https://www.google.com/maps/embed?pb=!4v1751055316972!6m8!1m7!1ssSaOQdhbTgWbQWeQ5Nfd2Q!2m2!1d-35.43055157367633!2d-60.1748679621957!3f12.069274121085652!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <!-- Elemento iframe para embeber mapa de Google Maps proporcionado por google maps -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!4v1751055316972!6m8!1m7!1ssSaOQdhbTgWbQWeQ5Nfd2Q!2m2!1d-35.43055157367633!2d-60.1748679621957!3f12.069274121085652!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
                         <figcaption>Mapa embebido de Google Maps</figcaption>
                     </figure>
                 </section>
@@ -129,6 +169,7 @@
                 <section>
                     <h3>Presentación PDF embebida</h3>
                     <figure>
+                        <!-- Elemento embed para mostrar documento PDF embebido -->
                         <embed src="assets/Actividad_3.pdf" width="800" height="500">
                         <figcaption>Documento PDF embebido</figcaption>
                     </figure>
@@ -140,7 +181,7 @@
     <!-- Footer: Pie de página -->
     <footer>
         <p>&copy; 2024 Fontana Andrés - Diseño de Páginas Web</p>
-        <p>Instituto de Educación Superior</p>
+        <p>Instituto Superior de Formacion Docente y Tecnica N°28</p>
         <p>Primer Cuatrimestre - TP4</p>
         <a href="index.html">Volver al Inicio</a>
     </footer>
